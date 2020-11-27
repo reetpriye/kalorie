@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon//favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon//favicon-16x16.png">
+  <link rel="manifest" href="favicon//site.webmanifest">
+  <!-- Link FontAwesomeIcon CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <!-- Link MaterializeCSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Link Local Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Kalorie | Track Daily Calories Intake</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <div class="nav-wrapper cyan lighten-1">
+      <div class="nav-wrapper">
+        <div class="container">
+          <a href="#" class="brand-logo left">Kalorie</a>
+          <ul class="right">
+            <li>
+              <a href="#" class="clear-btn btn teal lighten-2">Clear All</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <br>
+
+  <main>
+    <div class="container">
+      <!-- Form Card -->
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title">Add Meal / Food Item</span>
+          <form class="col">
+            <div class="row">
+              <div class="input-field col s6">
+                <input type="text" placeholder="Add Item" id="item-name">
+                <label for="item-name">Meal</label>
+              </div>
+              <div class="input-field col s6">
+                <input type="number" placeholder="Add Calories" id="item-calories">
+                <label for="item-calories">Calories</label>
+              </div>
+              <button class="add-btn btn teal darken-3"><i class="edit-item fa fa-plus"></i> Add</button>
+              <button class="update-btn btn blue"><i class="edit-item far fa-edit"></i> Update</button>
+              <button class="delete-btn btn red"><i class="edit-item fas fa-trash"></i> Delete</button>
+              <button class="back-btn btn right grey darken-1"><i class="edit-item fa fa-chevron-circle-left"></i> Back</button>
+            </div>
+          </form>
+        </div>
+      </div>
+  
+      <!-- Calorie Count -->
+      <h3 class="center-align calories-text">Total Calories: 
+        <span class="total-calories">0</span>
+      </h3>
+  
+      <!-- Item List -->
+      <ul id="item-list" class="collection"></ul>
+
+    </div>
+  </main>
+  
+
+  <footer class="footer">
+      <h6 class="right">Made with <i class="fas fa-heart"></i> & <i class="fab fa-js"></i><br>
+      Fork me on <a href="https://github.com/reetpriye"><i class="fab fa-github"></i></a></h6>
+  </footer>
+
+  <!-- Jquery -> Materialize -> External script.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
