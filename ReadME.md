@@ -5,7 +5,7 @@ To have a good grasp over module pattern using (IIFE -> Immediately
 Invoked Function Expression) and to advance my JavaScript skills, I developed this site.
 This site uses local storage to persist the data.
 
-![ScreenShot](assets/screenshot.jpg)
+![ScreenShot](assets/Screenshot.jpg)
 
 Visit at https://kalorie.netlify.app
 
